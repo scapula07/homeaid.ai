@@ -1,0 +1,12 @@
+@media screen and (max-width: 480px){
+    .banner-h{
+        height: 758px;;
+    }
+    .cate-text-w{
+        width:100% !important
+    }
+}
+
+.cate-text-w{
+    width:600px
+}

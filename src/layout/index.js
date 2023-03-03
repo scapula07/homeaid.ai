@@ -11,7 +11,7 @@ export default function Layout({children}) {
             <Header />
           </div>
           
-        <div className=" py-32 px-8">
+        <div className=" py-32" style={{background:" #FAFAFA"}}>
             {children}
           </div>
 
