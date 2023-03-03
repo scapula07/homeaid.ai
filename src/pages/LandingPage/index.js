@@ -1,9 +1,10 @@
 import React from 'react'
+import HeroSection from './heroSection'
 
 export default function LandingPage() {
   return (
-    <div>
-     index
+    <div className='w-full'>
+      <HeroSection />
         
     </div>
   )
