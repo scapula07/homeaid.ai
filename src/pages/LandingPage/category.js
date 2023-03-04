@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Category() {
   return (
-    <div className='px-8'>
+    <div className='px-8 py-12'>
         <div className='flex flex-col space-y-4 items-center lg:items-start'>
             <h5 className='text-2xl font-semibold' style={{color: "#787878"}}>All home problems</h5>
 

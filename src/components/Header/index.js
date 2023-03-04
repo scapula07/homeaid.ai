@@ -1,6 +1,7 @@
 import React from 'react'
 import icon from "../../assests/icon.png"
 import "./header.css"
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -15,10 +16,10 @@ export default function Header() {
                     <h5 className='text-lg font-bold text-color'>Homeaid</h5>
                </main>
                <main className='hidden  lg:flex text-color-sm text-lg font-normal items-center space-x-8'>
-                  <h5>Home</h5>
-                  <h5>About</h5>
-                  <h5>Ask</h5>
-                  <h5>Become Tasker</h5>
+                 <Link to="/"><h5 className=''>Home</h5></Link> 
+                 <Link to="#"> <h5>About</h5></Link>
+                 <Link to="/ask"> <h5>Ask</h5></Link>
+                 <Link to="/"><h5>Become Tasker</h5></Link>  
 
 
                </main>

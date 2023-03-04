@@ -15,7 +15,7 @@ export default function LandingPage() {
       <Banner />
       <div className='py-8' style={{background:"white"}}>
       <Steps />
-      <About />
+      <About cname={"flex-row"} />
       </div>
       <Category />
       <Testimonial />

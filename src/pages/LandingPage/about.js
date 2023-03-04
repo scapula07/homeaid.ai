@@ -2,10 +2,10 @@ import React from 'react'
 import aboutImg from "../../assests/about.png"
 
 
-export default function About() {
+export default function About({cname}) {
   return (
-    <div className='lg:py-32 px-8 '>
-        <div className='flex lg:flex-row flex-col-reverse justify-center  lg:space-x-20 py-20 gap-y-12'>
+    <div className='lg:pt-20 lg:pb-4 px-8 '>
+        <div className={`flex lg:${cname}  flex-col-reverse justify-center  lg:space-x-20 py-20 gap-y-12`}>
             <img src={aboutImg} className="w-96 w-1/2" />
 
             <main className='flex flex-col justify-center lg:w-1/2 w-full space-y-6'>
