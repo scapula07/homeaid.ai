@@ -6,7 +6,7 @@ import img4 from "../../assests/unsplash4.png"
 import img5 from "../../assests/unsplash5.png"
 import img6 from "../../assests/unsplash6.png"
 import img7 from "../../assests/unsplash7.png"
-import SearchBar from '../../components/SearchBar.js'
+import SearchBar from '../../components/inputFields/SearchBar.js/index.js'
 import icon from "../../assests/icon.png"
 
 export default function HeroSection() {

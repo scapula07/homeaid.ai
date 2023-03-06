@@ -24,8 +24,8 @@ export default function Header() {
 
                </main>
                <main className='hidden  lg:flex items-center space-x-4'>
-                  <h5 className='text-lg font-normal' style={{color:" #808080;"}}>Login</h5>
-                  <button className='bg-color px-4 py-2 text-white rounded-full  '>Create account</button>
+               <Link to="/signin"><h5 className='text-lg font-normal' style={{color:" #808080;"}}>Login</h5></Link>
+               <Link to="/signup"> <button className='bg-color px-4 py-2 text-white rounded-full  '>Create account</button></Link>
 
                </main>
          </div>

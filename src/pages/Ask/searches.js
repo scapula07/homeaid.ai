@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchBar from '../../components/SearchBar.js'
+import SearchBar from '../../components/inputFields/SearchBar.js/index.js'
 import {FaHamburger} from "react-icons/fa"
 
 

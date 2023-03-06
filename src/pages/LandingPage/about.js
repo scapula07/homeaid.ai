@@ -1,6 +1,6 @@
 import React from 'react'
 import aboutImg from "../../assests/about.png"
-
+import { Link } from 'react-router-dom'
 
 export default function About({cname}) {
   return (
@@ -21,7 +21,7 @@ export default function About({cname}) {
                       Tincidunt in consectetur pharetra elit tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt. 
                     </p>
 
-                    <button className="rounded-full py-2 px-4 w-48 h-16 text-white" style={{backgroundColor:"#7536C6"}}>Start asking</button>
+                  <Link to="/ask-"> <button className="rounded-full py-2 px-4 w-48 h-16 text-white" style={{backgroundColor:"#7536C6"}}>Start asking</button></Link> 
 
                      
                 </div>
