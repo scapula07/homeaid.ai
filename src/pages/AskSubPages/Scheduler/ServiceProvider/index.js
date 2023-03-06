@@ -4,7 +4,7 @@ import work1 from "../../../../assests/work1.png"
 import work2 from "../../../../assests/work2.png"
 import {AiFillStar} from "react-icons/ai"
 import {IoLocationOutline} from "react-icons/io5"
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 
 const Profile=()=>{
@@ -41,7 +41,7 @@ const Profile=()=>{
                    </main>
              </main>
              <main className='flex items-center w-full justify-center space-x-8'>
-                  <button className='text-white px-10 py-4 rounded-full' style={{background:" #7536C6"}}>Book me</button>
+                 <Link to="/ask-/scheduler-booking"><button className='text-white px-10 py-4 rounded-full' style={{background:" #7536C6"}}>Book me</button></Link> 
                   <button className=' border px-10 py-4 rounded-full'  style={{borderColor:" #7536C6",color:"#7536C6"}}>Chat me</button>
 
 
