@@ -19,7 +19,7 @@ export default function Header() {
                  <Link to="/"><h5 className=''>Home</h5></Link> 
                  <Link to="#"> <h5>About</h5></Link>
                  <Link to="/ask"> <h5>Ask</h5></Link>
-                 <Link to="/"><h5>Become Tasker</h5></Link>  
+                 <Link to="/become-tasker"><h5>Become Tasker</h5></Link>  
 
 
                </main>

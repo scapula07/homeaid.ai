@@ -5,7 +5,7 @@ import {IoLocationOutline} from "react-icons/io5"
 
 export default function SearchBar() {
   return (
-    <div className='flex items-center border   rounded-full h-16 w-full space-x-4'>
+    <div className='flex items-center border bg-white  rounded-full h-16 w-full space-x-4'>
         <main className='flex items-center w-3/5 space-x-2 px-4'>
             <BiSearch className='text-xl ' style={{color: "#989B9E"}}/>
             <input placeholder='What problem are you facing at home?' className='w-11/12 text-sm outline-none text-slate-500'/>

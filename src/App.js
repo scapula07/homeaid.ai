@@ -17,6 +17,8 @@ import Booking from './pages/AskSubPages/Scheduler/Booking';
 import CardPayment from './pages/AskSubPages/Scheduler/Booking/card';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
+import BecomeTasker from './pages/BecomeTasker';
+import Tasker from './pages/Tasker';
 
 function App() {
   return (
@@ -50,6 +52,12 @@ function App() {
                         <Route exact path=""  element={<CardPayment  />} />
                         
                     </Route>
+
+               
+            </Route>
+            <Route exact path="/become-tasker"  element={<BecomeTasker />} />
+
+            <Route exact path="/become-tasker-"  element={<Tasker  />} >
             </Route>
           </Routes>
           </Layout>

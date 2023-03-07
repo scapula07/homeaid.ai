@@ -39,13 +39,13 @@ export default function Query() {
         <div className='flex flex-col items-center space-y-16'>
             <p className='text-center w-1/2 text-sm' style={{color: "#787878"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt.</p>
              
-             <div className='flex w-full justify-cente w-3/5 space-x-20'>
-                <div className='w-2/5'>
+             <div className='flex  justify-center w-full space-x-20'>
+                <div className='w-1/4'>
                     <LocationSearch />
                   
                 </div>
             
-                <div className='w-2/5'>
+                <div className='w-1/4'>
                    <SelectQueryCate />
                 </div>
              </div>
