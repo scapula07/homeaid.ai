@@ -10,23 +10,23 @@ import { Link, Outlet } from 'react-router-dom'
 const Profile=()=>{
     return(
         <div className='flex flex-col w-full items-center space-y-10'>
-             <main className='flex flex-col w-full items-center space-y-2'>
-                   <img src={provider} className="w-52 h-52 rounded-full" />
+             <main className='flex flex-col w-full items-center space-y-2 '>
+                   <img src={provider} className="lg:w-52 lg:h-52 w-36 h-36 rounded-full" />
                    <h5 className="text-lg font-semibold" style={{color: "#252C32"}}>Lordswish Ugo</h5>
-                   <p className='text-center text-sm w-1/2' style={{color: " #787878"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt</p>
+                   <p className='text-center lg:text-sm text-xs lg:w-1/2 w-full' style={{color: " #787878"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt</p>
 
 
                    <main className='flex flex-col space-y-4 '>
-                      <main className='flex items-center space-x-8 '>
-                          <h5 className='border-r px-2' style={{borderRight: "1px solid #A1A1A1"}}>50$/hr</h5>
-                          <h5  className='border-r px-2 text-center'  style={{borderRight: "1px solid #A1A1A1"}}>10 km</h5>
+                      <main className='flex items-center lg:space-x-8 space-x-6 w-full'>
+                          <h5 className='border-r px-2 text-xs lg:text-base' style={{borderRight: "1px solid #A1A1A1"}}>50$/hr</h5>
+                          <h5  className='border-r lg:px-2 px-1 lg:text-center text-xs lg:text-base'  style={{borderRight: "1px solid #A1A1A1"}}>10km</h5>
                                 
                             <button className='flex items-center rounded-full px-1 py-0.5 space-x-0.5' style={{background: "rgba(255, 189, 57, 0.12)"}}>
                                 <AiFillStar className='text-xs' style={{color: "#FFBD39"}} />
                                 <span className='text-xs' style={{color: "#FFBD39"}}>4.9</span>
                             </button>
-                            <h5 className='border-l px-2 text-center' style={{borderLeft: "1px solid #A1A1A1"}}>450 walks</h5>
-                            <h5 className='border-l px-2'  style={{borderLeft: "1px solid #A1A1A1"}}>30 yrs</h5>
+                            <h5 className='border-l px-2 text-center text-xs lg:text-base' style={{borderLeft: "1px solid #A1A1A1"}}>450walks</h5>
+                            <h5 className='border-l px-2 text-xs lg:text-base'  style={{borderLeft: "1px solid #A1A1A1"}}>30yrs</h5>
 
                       </main>
                       <main className='flex items-center justify-center space-x-4'>
@@ -41,8 +41,8 @@ const Profile=()=>{
                    </main>
              </main>
              <main className='flex items-center w-full justify-center space-x-8'>
-                 <Link to="/ask-/scheduler-booking"><button className='text-white px-10 py-4 rounded-full' style={{background:" #7536C6"}}>Book me</button></Link> 
-                  <button className=' border px-10 py-4 rounded-full'  style={{borderColor:" #7536C6",color:"#7536C6"}}>Chat me</button>
+                 <Link to="/ask-/scheduler-booking"><button className='text-white px-10 py-4 rounded-full lg:text-base text-sm w-36 h-16 lg:w-44' style={{background:" #7536C6"}}>Book me</button></Link> 
+                 <Link to=""> <button className=' border px-10 py-4 px-8 rounded-full lg:text-base text-sm w-36 h-16 lg:w-44'  style={{borderColor:" #7536C6",color:"#7536C6"}}>Chat me</button> </Link>
 
 
              </main>
@@ -53,8 +53,8 @@ const Profile=()=>{
 
 const MidSection=()=>{
     return(
-        <div className='flex flex-col w-full items-center space-y-10'>
-            <main className='flex items-center w-full justify-center space-x-8'>
+        <div className='flex flex-col w-full items-center space-y-10 '>
+            <main className='flex items-center w-full justify-center space-x-8 overflow-x-scroll' style={{width:"200%"}}>
                   <button className='border px-4 py-1 text-sm rounded-full' >Skills</button>
                   <button className=' border px-4 py-2  text-sm rounded-full'  >Schedule Ugo</button>
                   <button className=' border px-4 py-2 text-sm  rounded-full' >Reviews</button>
@@ -74,7 +74,7 @@ const MidSection=()=>{
 const Works=()=>{
 
     return(
-        <div className='flex flex-col w-4/5 space-y-10'>
+        <div className='flex flex-col lg:w-4/5 w-full space-y-10'>
              <main className='prev flex flex-col space-y-4'>
                <h5 className='font-semibold text-lg' style={{color: "#252C32"}}>Previous works </h5>
                 <p className='text-sm ' style={{color: "#787878"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur </p>
@@ -117,12 +117,12 @@ export default function ServiceProvider() {
   return (
     <div className='py-20 px-8'>
         <div className='flex flex-col items-center space-y-16'>
-            <p className='text-center w-1/2 text-sm' style={{color: "#787878"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt.</p>
+            <p className='text-center lg:w-1/2 text-sm' style={{color: "#787878"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt.</p>
              
 
 
              <div className='flex   w-full justify-center py-10'>
-                  <div className='flex flex-col w-3/5 space-y-10'>
+                  <div className='flex flex-col lg:w-3/5  space-y-10'>
                      <Profile />
 
                      <hr></hr>

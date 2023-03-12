@@ -115,8 +115,8 @@ export default function Booking() {
   return (
     <div className='py-20 px-8'>
         <main className='flex flex-col items-center px-4'>
-            <div className='bg-white flex rounded-lg border w-3/4  py-20'>
-                   <main className='border-r w-1/2  flex flex-col'>
+            <div className='lg:bg-white flex lg:flex-row flex-col space-y-10 lg:space-y-0 rounded-lg lg:border lg:w-3/4  py-20'>
+                   <main className='lg:border-r border lg:border-0 lg:w-1/2 w-full flex flex-col py-10 lg:py-0'>
                       <div>
                          <Profile />
                       </div>
@@ -162,7 +162,7 @@ export default function Booking() {
 
 
                    </main>
-                    <main className='w-1/2'>
+                    <main className='lg:border-r border lg:border-0 lg:w-1/2 w-full flex flex-col py-10 lg:py-0'>
                         < Payments />
                     </main>
 

@@ -7,7 +7,7 @@ export default function Scheduler() {
   return (
     <div className='w-full'>
         <div className='flex justify-center pt-10'>
-            < p className='text-sm text-center w-3/4' style={{color: "#787878"}}>
+            < p className='text-sm text-center lg:w-3/4  w-full'  style={{color: "#787878"}}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt.
             </p>
           

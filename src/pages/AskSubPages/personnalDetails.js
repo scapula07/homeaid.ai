@@ -4,15 +4,15 @@ export default function PersonnalDetails() {
   return (
     <div className='py-20'>
     <div className='flex flex-col items-center space-y-16'>
-        <div className="flex flex-col  w-3/5 ">
+        <div className="flex flex-col  lg:w-3/5 w-full items-center lg:items-start ">
             <h5 className='text-lg font-semibold' style={{color: "#787878"}}>Confirming your personal details</h5>
-            <p className=' text-sm' style={{color: "#787878"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt.</p>
+            <p className=' text-sm text-center lg:text-start' style={{color: "#787878"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt in consectetur pharetra elit tincidunt.</p>
                 
         </div> 
 
-        <div className='flex flex-col w-full items-center space-y-10'>
-            <main className='form-1 bg-white  w-1/2 px-6 py-8 rounded-xl ' >
-                  <h5 className='text-lg font-semibold' style={{color: "#585858"}}>Personal details</h5>
+        <div className='flex flex-col w-full items-center space-y-10 lg:px-0 px-4'>
+            <main className='form-1 bg-white  lg:w-1/2 w-full  px-6 py-8 rounded-xl ' >
+                  <h5 className='text-lg font-semibold text-center lg:text-start' style={{color: "#585858"}}>Personal details</h5>
                   <div className='flex flex-col w-full py-4 space-y-4 w-full'>
                       <div className='flex items-center justify-between space-x-8  w-full'>
                          <main className='flex flex-col w-1/2 space-y-2'>
@@ -42,8 +42,8 @@ export default function PersonnalDetails() {
 
                   </div>
             </main>
-            <main className='form-2 bg-white  w-1/2 rounded-xl px-6 py-8' >
-                <h5 className='text-lg font-semibold' style={{color: "#585858"}}>Home address</h5>
+            <main className='form-2 bg-white  lg:w-1/2 w-full rounded-xl px-6 py-8' >
+                <h5 className='text-lg font-semibold text-center lg:text-start' style={{color: "#585858"}}>Home address</h5>
 
                 <div className='flex flex-col w-full py-4 space-y-4'>
                      <div className='flex flex-col space-y-2'>

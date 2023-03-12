@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Routes,Route,BrowserRouter as Router } from "react-router-dom"
@@ -34,12 +34,43 @@ import ProfileSettings from './pages/TaskerDashboard/Settings/profile';
 import SkillSettings from './pages/TaskerDashboard/Settings/skills';
 import ScheduleSettings from './pages/TaskerDashboard/Settings/schedule';
 
+import { onAuthStateChanged } from "firebase/auth"
+import { auth,db } from './firebase';
+import { doc,getDoc}  from "firebase/firestore";
+import { AccountState } from './recoil/globalState';
+import { useRecoilState } from 'recoil';
 
 
 
 
 
 function App() {
+  const [currentUser,setcurrentUser]=useRecoilState(AccountState)
+
+
+
+  let authListner=null
+  useEffect( ()=>{
+  
+    authListner=onAuthStateChanged(auth,(user)=>{
+        if (user !== null) {
+            const uid = user.uid;
+          
+            const userRef =doc(db,"users", uid)
+           
+            getDoc(userRef).then(res=> {
+            console.log(res.exists(),"exist")
+            setcurrentUser({...res.data(),id:uid})
+       
+          })
+        }
+        })
+     return(
+      authListner()
+      )
+},[])
+    
+  console.log(currentUser)
   return (
     <div className="App">
       
