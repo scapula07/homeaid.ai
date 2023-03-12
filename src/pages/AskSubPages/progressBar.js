@@ -2,11 +2,13 @@ import React,{useState} from 'react'
 import {MdHorizontalRule} from "react-icons/md"
 import bar from "../../assests/bar.svg"
 import { Link } from 'react-router-dom'
+import "./ask.css"
+
 export default function ProgressBar() {
     const [step,setStep]=useState("1")
   return (
     <div className='w-full flex flex-col ' >
-      <div className='flex justify-center '  >
+      <div className='flex justify-center progress-width '  >
           
          
          <Link to="">
@@ -29,7 +31,7 @@ export default function ProgressBar() {
            
       </div>
 
-       <div className='flex justify-center  ' >
+       <div className='flex justify-center  progress-width ' >
             <span className={`p-2  flex items-center justify-center ${ step=="1"? "text-black ":"text-slate-400" }`}
             >Enter query/See answers</span>
               <h5 className='w-1/6' style={{width:"10%"}}></h5>
